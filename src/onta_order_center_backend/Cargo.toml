@@ -1,0 +1,19 @@
+[package]
+name = "onta_order_center_backend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+candid = "0.10"
+ic-cdk = "0.16"
+ic-cdk-macros = "0.16"
+ic-stable-structures = "0.6.3"
+serde = { version = "1.0.132", features = ["derive"] }
+serde_json = "1.0"
+hex = "0.4.3"
+getrandom = {version="0.2.3", features=["custom"]}

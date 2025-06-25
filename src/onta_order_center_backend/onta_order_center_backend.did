@@ -1,0 +1,20 @@
+type OrderInfo = record {
+    order_id : text;
+    location : text;
+    create_time : nat64;
+    currency : text;
+    amount : text;
+};
+
+type StoreOrderListResult = variant {
+    Ok : record { stored_count : nat64; duplicate_count : nat64 };
+    Err : text;
+};
+
+service : {
+    "greet": (text) -> (text) query;
+    "store_user_list": (vec OrderInfo) -> (StoreOrderListResult);
+    "get_order": (text) -> (opt OrderInfo) query;
+    "get_all_orders": () -> (vec OrderInfo) query;
+    "get_orders_count": () -> (nat64) query;
+}

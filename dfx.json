@@ -1,0 +1,17 @@
+{
+  "canisters": {
+    "onta_order_center_backend": {
+      "candid": "src/onta_order_center_backend/onta_order_center_backend.did",
+      "package": "onta_order_center_backend",
+      "type": "rust"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

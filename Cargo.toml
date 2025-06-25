@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/onta_order_center_backend"
+]
+resolver = "2"
