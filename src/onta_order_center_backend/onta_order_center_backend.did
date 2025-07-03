@@ -17,4 +17,5 @@ service : {
     "get_order": (text) -> (opt OrderInfo) query;
     "get_all_orders": () -> (vec OrderInfo) query;
     "get_orders_count": () -> (nat64) query;
+    "delete_order": (vec text) -> (variant { Ok : vec text; Err : text });
 }
